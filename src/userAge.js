@@ -5,7 +5,7 @@ import { getChangedFilesForRoots } from "jest-changed-files";
 export class UserAge {
   constructor(age) {
     this.age = age;
-    this.lifeExp = undefined;
+    this.lifeExp = 80 - age;
   };
 
   // Ensure number is given by user
@@ -21,7 +21,6 @@ export class UserAge {
 
   // Assume all people have a life expectancy of 80
   calculateLifeExp() {
-  	this.lifeExp = 80 - this.age;
   	if (this.lifeExp < 0) {
   		return Math.abs(this.lifeExp);
   	} else {
@@ -49,9 +48,5 @@ export class UserAge {
   	return jupiterAge.toFixed(2);
   }
 
-  // mercuryLifeExp() {
-  // 	let mercuryLifeExp = this.age.calculateLifeExp();
-  // 	console.log("mercLE: " + mercuryLifeExp);
-  // }
 
 };
