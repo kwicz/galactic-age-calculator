@@ -24,7 +24,7 @@ export class UserAge {
   };
 
   // Assume all people have a life expectancy of 80
-  calculateLifeExp() {
+  calculateBonusYears() {
   	if (this.lifeExp < 0) {
   		return Math.abs(this.lifeExp);
   	} else {

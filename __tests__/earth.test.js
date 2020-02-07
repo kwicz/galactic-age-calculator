@@ -18,32 +18,27 @@ describe('UserAge', () => {
   	expect(number.checkNumber()).toEqual("input is a number");
   });
 
-  test('should return number of years left of life expectancy', () => {
-  	let lifeExp = new UserAge(20);
-  	expect(lifeExp.calculateLifeExp()).toEqual(60);
-  });
-
   test('should return number of years ago a user over 80 should have died', () => {
   	let stillAlive = new UserAge(90);
-  	expect(stillAlive.calculateLifeExp()).toEqual(10);
+  	expect(stillAlive.calculateBonusYears()).toEqual(10);
   });
 
-  test('should return calculated age on Mercury', () => {
+  test('should return calculations for Mercury', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.mercurianCalculator()).toEqual(["83.33", "250.00"]);
   });
 
-  test('should return calculated age on Venus', () => {
+  test('should return calculations for Venus', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.venutianCalculator()).toEqual(["32.26", "96.77"]);
   });
 
-  test('should return calculated age on Mars', () => {
+  test('should return calculations for Mars', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.martianCalculator()).toEqual(["10.64", "31.91"]);
   });
 
-  test('should return calculated age on Jupiter', () => {
+  test('should return calculations for Jupiter', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.jovianCalculator()).toEqual(["1.69", "5.06"]);
   });
