@@ -44,6 +44,11 @@ export class UserAge {
   	return marsAge.toFixed(2);
   }
 
+  jupiterAge() {
+  	let jupiterAge = this.age / 11.86;
+  	return jupiterAge.toFixed(2);
+  }
+
   // mercuryLifeExp() {
   // 	let mercuryLifeExp = this.age.calculateLifeExp();
   // 	console.log("mercLE: " + mercuryLifeExp);
