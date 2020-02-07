@@ -48,9 +48,9 @@ describe('UserAge', () => {
   	expect(userAge.jupiterAge()).toEqual("1.69");
   });
 
-  // test('should return calculate mercury life expectancy', () => {
-  // 	let userAge = new UserAge(20);
-  // 	expect(userAge.mercuryLifeExp()).toEqual("250");
-  // })
+  test('should return calculate mercury life expectancy', () => {
+  	let userAge = new UserAge(20);
+  	expect(userAge.mercuryLifeExp()).toEqual("250");
+  });
 
 });

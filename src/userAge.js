@@ -33,6 +33,11 @@ export class UserAge {
   	return mercuryAge.toFixed(2);
   }
 
+  mercuryLifeExp() {
+  	let mercuryLifeExp = this.lifeExp / .24;
+  	return mercuryLifeExp.toFixed(2);
+  }
+
   venusAge() {
   	let venusAge = this.age / .62;
   	return venusAge.toFixed(2);
@@ -47,6 +52,5 @@ export class UserAge {
   	let jupiterAge = this.age / 11.86;
   	return jupiterAge.toFixed(2);
   }
-
 
 };
