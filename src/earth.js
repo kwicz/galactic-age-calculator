@@ -11,7 +11,13 @@ export class Earth {
   };
 
   checkNumber() {
-
+  	let number = /\d+/;
+  	let result = number.test(this.age);
+  	if (result === true) {
+  		return "input is a number";
+  	} else {
+  		return "input is not a number";
+  	}
   };
 
 
