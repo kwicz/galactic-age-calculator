@@ -60,7 +60,7 @@ describe('UserAge', () => {
 
   test('should return calculate Martian life expectancy', () => {
   	let userAge = new UserAge(20);
-  	expect(userAge.marsLifeExp()).toEqual("96.77");
+  	expect(userAge.marsLifeExp()).toEqual("31.91");
   });
 
 });
