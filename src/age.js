@@ -4,17 +4,21 @@ import { getChangedFilesForRoots } from "jest-changed-files";
 // Business-Logic
 
 
-class Earth {
-  constructor(age, lifeExp) {
-    this.age = age;
-    this.lifeExp = lifeExp;
+export class Age {
+  constructor(earthAge, planet) {
+    this.earthAge = earthAge;
+    this.planet = planet;
   }
  
-  
+ 	// Check for user input
+  checkForAge()
+
+  };
+
+  // Check age input is a number
 
 
-
-};
+  // Calculate age based on planet
 
 
 
@@ -104,4 +108,5 @@ class Earth {
 //   };
 //   return presentVowelsTotal;
 // };
+
 

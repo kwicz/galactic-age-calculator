@@ -1,14 +1,19 @@
-import { Earth } from '../src/earth.js/';
+import { Age } from '../src/earth.js/';
 import { exportAllDeclaration, tsImportEqualsDeclaration } from '@babel/types';
 
 
-describe('Earth', () => {
+describe('Age', () => {
+
+  test('age should have a value', () => {
+    let age = new Age(20, planet);
+    expect(age.line1).toEqual(20);
+  });
 
 });
 
 
 
-  // describe('Haiku', () => {
+// describe('Haiku', () => {
   //   test('should have a value in each line', () => {
   //    let haikuLines = new HaikuLines(1, 2, 3);
   //     expect(haikuLines.line1).toEqual(1);
@@ -53,4 +58,3 @@ describe('Earth', () => {
   //   });
 
   // });
-
