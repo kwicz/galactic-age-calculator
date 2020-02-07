@@ -26,7 +26,7 @@ describe('Earth', () => {
 
   test('should return number of years ago a user over 80 should have died', () => {
   	let stillAlive = new Earth(90);
-  	expect(stillAlive.calculateLifeExp()).toEqual(5);
+  	expect(stillAlive.calculateLifeExp()).toEqual(10);
   });
 
 });
