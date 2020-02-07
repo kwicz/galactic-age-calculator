@@ -28,9 +28,19 @@ describe('UserAge', () => {
   	expect(stillAlive.calculateLifeExp()).toEqual(10);
   });
 
-  test('should return calculated mercury age', () => {
+  test('should return calculated age on Mercury', () => {
   	let userAge = new UserAge(20);
-  	expect(userAge.calculateMercuryAge()).toEqual("83.33");
+  	expect(userAge.mercuryAge()).toEqual("83.33");
   });
+
+  test('should return calculated age on Venus', () => {
+  	let userAge = new UserAge(20);
+  	expect(userAge.venusAge()).toEqual("83.33");
+  });
+
+  // test('should return calculate mercury life expectancy', () => {
+  // 	let userAge = new UserAge(20);
+  // 	expect(userAge.mercuryLifeExp()).toEqual("250");
+  // })
 
 });

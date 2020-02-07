@@ -6,7 +6,6 @@ export class UserAge {
   constructor(age) {
     this.age = age;
     this.lifeExp = undefined;
-    this.mercuryAge = undefined;
   };
 
   // Ensure number is given by user
@@ -30,9 +29,19 @@ export class UserAge {
   	}
   };
 
-  calculateMercuryAge() {
-  	this.mercuryAge = this.age / .24;
-  	return this.mercuryAge.toFixed(2);
+  mercuryAge() {
+  	let mercuryAge = this.age / .24;
+  	return mercuryAge.toFixed(2);
   }
+
+  venusAge() {
+  	let venusAge = this.age / .62;
+  	return venusAge.toFixed(2);
+  }
+
+  // mercuryLifeExp() {
+  // 	let mercuryLifeExp = this.age.calculateLifeExp();
+  // 	console.log("mercLE: " + mercuryLifeExp);
+  // }
 
 };
