@@ -21,7 +21,7 @@ describe('Earth', () => {
 
   test('life expectancy should have a value', () => {
   	let lifeExp = new Earth(20, 60);
-  	expect(lifeExp.lifeExp).toEqual(70);
+  	expect(lifeExp.lifeExp).toEqual(60);
   });
 
 });
