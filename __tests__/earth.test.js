@@ -50,7 +50,7 @@ describe('UserAge', () => {
 
   test('should return calculate mercury life expectancy', () => {
   	let userAge = new UserAge(20);
-  	expect(userAge.mercuryLifeExp()).toEqual("250");
+  	expect(userAge.mercuryLifeExp()).toEqual("250.00");
   });
 
 });
