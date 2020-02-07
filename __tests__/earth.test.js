@@ -55,7 +55,7 @@ describe('UserAge', () => {
 
   test('should return calculate Venutian life expectancy', () => {
   	let userAge = new UserAge(20);
-  	expect(userAge.venusLifeExp()).toEqual("250.00");
+  	expect(userAge.venusLifeExp()).toEqual("96.77");
   });
 
 });
