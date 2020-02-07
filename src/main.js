@@ -1,4 +1,4 @@
-// import { Age } from './age.js';	
+// import { Earth } from './earth.js';	
 // import './styles.css';
 // import $ from 'jquery';
 // import 'bootstrap';

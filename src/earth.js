@@ -1,8 +1,6 @@
 import { arrayExpression } from "@babel/types";
 import { getChangedFilesForRoots } from "jest-changed-files";
 
-// Business-Logic
-
 // Create base values for user
 export class Earth {
   constructor(age) {
@@ -21,7 +19,7 @@ export class Earth {
   	};
   };
 
-  // Assume all people die at 80
+  // Assume all people have a life expectancy of 80
   calculateLifeExp() {
   	this.lifeExp = 80 - this.age;
   	if (this.lifeExp < 0) {
@@ -29,7 +27,6 @@ export class Earth {
   	} else {
   		return this.lifeExp;
   	}
-  	
   };
 
 };
