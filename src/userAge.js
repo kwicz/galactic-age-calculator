@@ -9,7 +9,7 @@ export class UserAge {
     this.mercury = [];
     this.venus =[];
     this.mars =[];
-    this.jupter =[];
+    this.jupiter =[];
   };
 
   // Ensure integer is given by user
@@ -50,13 +50,10 @@ export class UserAge {
   	return this.mars;
   } 
 
-  jupiterAge() {
-  	let jupiterAge = this.age / 11.86;
-  	return jupiterAge.toFixed(2);
-  }
+  jovianCalculator() {
+  	this.jupiter[0] = (this.age / 11.86).toFixed(2);
+  	this.jupiter[1] = (this.lifeExp / 11.86).toFixed(2);
+  	return this.jupiter;
+  } 
 
-  jupiterLifeExp() {
-  	let jupiterLifeExp = this.lifeExp / 11.86;
-  	return jupiterLifeExp.toFixed(2);
-  }
 };
