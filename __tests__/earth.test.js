@@ -1,7 +1,6 @@
 import { Earth } from '../src/earth.js/';
 import { exportAllDeclaration, tsImportEqualsDeclaration } from '@babel/types';
 
-
 describe('Earth', () => {
 
   test('age should have a value', () => {
@@ -30,31 +29,3 @@ describe('Earth', () => {
   });
 
 });
-
-    
-  //   test('Input should not accept puntuation', () => {
-  //     let haikuLines = new HaikuLines("&", "nan", "nan");
-  //     expect(haikuLines.puncCheck()).toEqual("fail");
-  //   });
-    
-  //   test('Input should succeed if recieving 3 nans', () => {
-  //     let haikuLines = new HaikuLines("nan", "nan", "nan");
-  //     expect(haikuLines.puncCheck()).toEqual("success");
-  //   });
-
-  //   test('Input should return number of vowels', () => {
-  //     let haikuLines = new HaikuLines("thermos", "seven", "eleven");
-  //     expect(haikuLines.syllableCheck()).toEqual([2, 2, 3]);
-  //   });
-
-  //   test('Input should return number of vowels except "e" at the end of a word', () => {
-  //     let haikuLines = new HaikuLines("malice", "compute", "lemon");
-  //     expect(haikuLines.syllableCheck()).toEqual([2,2,2]);
-  //   });
-
-  //   test('Input should return number of vowels except "e" at the end of the word and the second vowel of a dipthong', () => {
-  //     let haikuLines = new HaikuLines("breathe", "cooper", "bamboozled");
-  //     expect(haikuLines.syllableCheck()).toEqual([1,2,3]);
-  //   });
-
-  // });
