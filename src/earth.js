@@ -24,7 +24,12 @@ export class Earth {
   // Assume all people die at 80
   calculateLifeExp() {
   	this.lifeExp = 80 - this.age;
-  	return this.lifeExp;
+  	if (this.lifeExp < 0) {
+  		return Math.abs(this.lifeExp);
+  	} else {
+  		return this.lifeExp;
+  	}
+  	
   };
 
 };
