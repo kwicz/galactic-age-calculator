@@ -5,7 +5,7 @@ import { exportAllDeclaration, tsImportEqualsDeclaration } from '@babel/types';
 describe('Earth', () => {
 
   test('age should have a value', () => {
-    let earth = new Earth();
+    let earth = new Earth(20);
     expect(earth.age).toEqual(20);
   });
 
