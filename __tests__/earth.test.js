@@ -15,7 +15,7 @@ describe('Earth', () => {
   });
 
   test('should determine input is an int', () => {
-  	let number = new Earth("twenty");
+  	let number = new Earth(20);
   	expect(number.checkNumber()).toEqual("input is a number");
   });  
 
