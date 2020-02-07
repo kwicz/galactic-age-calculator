@@ -10,6 +10,9 @@ export class Earth {
     this.lifeExp = lifeExp;
   };
 
+  checkNumber() {
+
+  };
 
 
 };

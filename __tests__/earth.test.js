@@ -9,7 +9,10 @@ describe('Earth', () => {
     expect(earth.age).toEqual(20);
   });
 
-
+  test('age should be an integer', () => {
+  	let notNumber = new Earth("twenty");
+  	expect(notNumber.checkNumber()).toEqual("input not a number");
+  });
 
 });
 
