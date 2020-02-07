@@ -35,7 +35,7 @@ describe('UserAge', () => {
 
   test('should return calculated age on Venus', () => {
   	let userAge = new UserAge(20);
-  	expect(userAge.venusAge()).toEqual("83.33");
+  	expect(userAge.venusAge()).toEqual("32.26");
   });
 
   // test('should return calculate mercury life expectancy', () => {
