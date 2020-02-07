@@ -9,38 +9,23 @@ describe('Earth', () => {
     expect(earth.age).toEqual(20);
   });
 
-  test('should determine input is not an int', () => {
+  test('should determine age input is not an int', () => {
   	let notNumber = new Earth("twenty");
   	expect(notNumber.checkNumber()).toEqual("input is not a number");
   });
 
-  test('should determine input is an int', () => {
+  test('should determine age input is an int', () => {
   	let number = new Earth(20);
   	expect(number.checkNumber()).toEqual("input is a number");
-  });  
+  });
+
+  test('life expectancy should have a value', () => {
+  	let lifeExp = new Earth(20, 60);
+  	expect(lifeExp.lifeExp).toEqual(70);
+  });
 
 });
 
-
-
-  // describe('Haiku', () => {
-  //   test('should have a value in each line', () => {
-  //    let haikuLines = new HaikuLines(1, 2, 3);
-  //     expect(haikuLines.line1).toEqual(1);
-  //     expect(haikuLines.line2).toEqual(2);
-  //     expect(haikuLines.line3).toEqual(3);
-
-  //   });
-    
-  //   test('Input should NOT contain an number', () => {
-  //     let haikuLines = new HaikuLines("1", "nan", "nan");
-  //     expect(haikuLines.numberCheck()).toEqual("error");
-  //   });
-    
-  //   test('Input should NOT contain an number', () => {
-  //     let haikuLines = new HaikuLines("nan", "nan", "nan");
-  //     expect(haikuLines.numberCheck()).toEqual("success");
-  //   });
     
   //   test('Input should not accept puntuation', () => {
   //     let haikuLines = new HaikuLines("&", "nan", "nan");
