@@ -30,12 +30,12 @@ describe('UserAge', () => {
 
   test('should return calculated age on Mercury', () => {
   	let userAge = new UserAge(20);
-  	expect(userAge.mercuryCalculator()).toEqual(["83.33", "250.00"]);
+  	expect(userAge.mercurianCalculator()).toEqual(["83.33", "250.00"]);
   });
 
   test('should return calculated age on Venus', () => {
   	let userAge = new UserAge(20);
-  	expect(userAge.venusAge()).toEqual("32.26");
+  	expect(userAge.venutianCalculator()).toEqual(["32.26", "96.77"]);
   });
 
   test('should return calculated age on Mars', () => {
@@ -46,16 +46,6 @@ describe('UserAge', () => {
   test('should return calculated age on Jupiter', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.jupiterAge()).toEqual("1.69");
-  });
-
-  test('should return calculate Mercurian life expectancy', () => {
-  	let userAge = new UserAge(20);
-  	expect(userAge.mercuryLifeExp()).toEqual("250.00");
-  });
-
-  test('should return calculate Venutian life expectancy', () => {
-  	let userAge = new UserAge(20);
-  	expect(userAge.venusLifeExp()).toEqual("96.77");
   });
 
   test('should return calculate Martian life expectancy', () => {

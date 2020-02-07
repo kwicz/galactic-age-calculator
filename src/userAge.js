@@ -32,25 +32,16 @@ export class UserAge {
   	};
   };
 
-  mercuryCalculator() {
+  mercurianCalculator() {
   	this.mercury[0] = (this.age / .24).toFixed(2);
   	this.mercury[1] = (this.lifeExp / .24).toFixed(2);
   	return this.mercury;
   }
 
-  mercuryLifeExp() {
-  	let mercuryLifeExp = this.lifeExp / .24;
-  	return mercuryLifeExp.toFixed(2);
-  }
-
-  venusAge() {
-  	let venusAge = this.age / .62;
-  	return venusAge.toFixed(2);
-  }
-
-  venusLifeExp() {
-  	let venusLifeExp = this.lifeExp / .62;
-  	return venusLifeExp.toFixed(2);
+  venutianCalculator() {
+  	this.venus[0] = (this.age / .62).toFixed(2);
+  	this.venus[1] = (this.lifeExp / .62).toFixed(2);
+  	return this.venus;
   }
 
   marsAge() {
