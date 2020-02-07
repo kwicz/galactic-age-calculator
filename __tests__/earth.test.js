@@ -65,6 +65,6 @@ describe('UserAge', () => {
 
   test('should return calculate Jovian life expectancy', () => {
   	let userAge = new UserAge(20);
-  	expect(userAge.jupiterLifeExp()).toEqual("31.91");
+  	expect(userAge.jupiterLifeExp()).toEqual("5.06");
   });
 });
