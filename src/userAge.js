@@ -44,15 +44,11 @@ export class UserAge {
   	return this.venus;
   }
 
-  marsAge() {
-  	let marsAge = this.age / 1.88;
-  	return marsAge.toFixed(2);
-  }
-
-  marsLifeExp() {
-  	let marsLifeExp = this.lifeExp / 1.88;
-  	return marsLifeExp.toFixed(2);
-  }  
+  martianCalculator() {
+  	this.mars[0] = (this.age / 1.88).toFixed(2);
+  	this.mars[1] = (this.lifeExp / 1.88).toFixed(2);
+  	return this.mars;
+  } 
 
   jupiterAge() {
   	let jupiterAge = this.age / 11.86;

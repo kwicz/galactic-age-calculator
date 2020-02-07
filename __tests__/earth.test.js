@@ -40,17 +40,12 @@ describe('UserAge', () => {
 
   test('should return calculated age on Mars', () => {
   	let userAge = new UserAge(20);
-  	expect(userAge.marsAge()).toEqual("10.64");
+  	expect(userAge.martianCalculator()).toEqual(["10.64", "31.91"]);
   });
 
   test('should return calculated age on Jupiter', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.jupiterAge()).toEqual("1.69");
-  });
-
-  test('should return calculate Martian life expectancy', () => {
-  	let userAge = new UserAge(20);
-  	expect(userAge.marsLifeExp()).toEqual("31.91");
   });
 
   test('should return calculate Jovian life expectancy', () => {
