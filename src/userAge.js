@@ -2,10 +2,11 @@ import { arrayExpression } from "@babel/types";
 import { getChangedFilesForRoots } from "jest-changed-files";
 
 // Create base values for user
-export class Earth {
+export class userAge {
   constructor(age) {
     this.age = age;
     this.lifeExp = undefined;
+    this.mercuryAge = undefined;
   };
 
   // Ensure number is given by user
@@ -28,5 +29,10 @@ export class Earth {
   		return this.lifeExp;
   	}
   };
+
+  mercuryAge() {
+  	this.mercuryAge = this.age / .24;
+  	return this.mercuryAge.toFixed(2);
+  }
 
 };
