@@ -19,14 +19,9 @@ describe('Earth', () => {
   	expect(number.checkNumber()).toEqual("input is a number");
   });
 
-  test('life expectancy should have a value', () => {
-  	let lifeExp = new Earth(20, 60);
-  	expect(lifeExp.lifeExp).toEqual(60);
-  });
-
   test('should return number of years left of life expectancy', () => {
-  	let lifeExp = new Earth(20, 60);
-  	expect(lifeExp.lifeExp).toEqual(60);
+  	let lifeExp = new Earth(20);
+  	expect(lifeExp.calculateLifeExp()).toEqual(50);
   });
 
 });

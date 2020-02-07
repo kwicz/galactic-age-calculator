@@ -5,9 +5,9 @@ import { getChangedFilesForRoots } from "jest-changed-files";
 
 // Create base values for user
 export class Earth {
-  constructor(age, lifeExp) {
+  constructor(age) {
     this.age = age;
-    this.lifeExp = lifeExp;
+    this.lifeExp = undefined;
   };
 
   // Ensure number is given by user
@@ -24,7 +24,7 @@ export class Earth {
   // Assume all people die at 80
   calculateLifeExp() {
   	this.lifeExp = 80 - this.age;
-  	return lifeExp;
+  	return this.lifeExp;
   };
 
 };
