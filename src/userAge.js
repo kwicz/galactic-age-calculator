@@ -6,9 +6,13 @@ export class UserAge {
   constructor(age) {
     this.age = age;
     this.lifeExp = 80 - age;
+    this.mercury = [];
+    this.venus =[];
+    this.mars =[];
+    this.jupter =[];
   };
 
-  // Ensure number is given by user
+  // Ensure integer is given by user
   checkNumber() {
   	let number = /\d+/;
   	let result = number.test(this.age);
@@ -28,9 +32,10 @@ export class UserAge {
   	};
   };
 
-  mercuryAge() {
-  	let mercuryAge = this.age / .24;
-  	return mercuryAge.toFixed(2);
+  mercuryCalculator() {
+  	this.mercury[0] = (this.age / .24).toFixed(2);
+  	this.mercury[1] = (this.lifeExp / .24).toFixed(2);
+  	return this.mercury;
   }
 
   mercuryLifeExp() {
