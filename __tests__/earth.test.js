@@ -48,9 +48,14 @@ describe('UserAge', () => {
   	expect(userAge.jupiterAge()).toEqual("1.69");
   });
 
-  test('should return calculate mercury life expectancy', () => {
+  test('should return calculate Mercurian life expectancy', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.mercuryLifeExp()).toEqual("250.00");
+  });
+
+  test('should return calculate Venutian life expectancy', () => {
+  	let userAge = new UserAge(20);
+  	expect(userAge.venusLifeExp()).toEqual("250.00");
   });
 
 });

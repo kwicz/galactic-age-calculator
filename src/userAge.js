@@ -43,6 +43,11 @@ export class UserAge {
   	return venusAge.toFixed(2);
   }
 
+  venusLifeExp() {
+  	let venusLifeExp = this.lifeExp / .62;
+  	return venusLifeExp.toFixed(2);
+  }
+
   marsAge() {
   	let marsAge = this.age / 1.88;
   	return marsAge.toFixed(2);
