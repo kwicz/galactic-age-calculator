@@ -20,7 +20,7 @@ describe('UserAge', () => {
 
   test('should return number of years ago a user over 80 should have died', () => {
   	let stillAlive = new UserAge(90);
-  	expect(stillAlive.calculateBonusYears()).toEqual(10);
+  	expect(stillAlive.bonusYears).toEqual(10);
   });
 
   test('should return calculations for Mercury', () => {

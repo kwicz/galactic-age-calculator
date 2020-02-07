@@ -24,15 +24,6 @@ export class UserAge {
   	};
   };
 
-  // Assume all people have a life expectancy of 80
-  calculateBonusYears() {
-  	if (this.lifeExp < 0) {
-  		return this.bonusYears;
-  	} else {
-  		return this.lifeExp;
-  	};
-  };
-
   mercurianCalculator() {
   	this.mercury[0] = (this.age / .24).toFixed(2);
   	this.mercury[1] = (this.lifeExp / .24).toFixed(2);
