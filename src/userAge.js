@@ -2,7 +2,7 @@ import { arrayExpression } from "@babel/types";
 import { getChangedFilesForRoots } from "jest-changed-files";
 
 // Create base values for user
-export class userAge {
+export class UserAge {
   constructor(age) {
     this.age = age;
     this.lifeExp = undefined;
@@ -30,7 +30,7 @@ export class userAge {
   	}
   };
 
-  mercuryAge() {
+  calculateMercuryAge() {
   	this.mercuryAge = this.age / .24;
   	return this.mercuryAge.toFixed(2);
   }
