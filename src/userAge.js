@@ -25,7 +25,7 @@ export class UserAge {
   		return Math.abs(this.lifeExp);
   	} else {
   		return this.lifeExp;
-  	}
+  	};
   };
 
   mercuryAge() {
@@ -63,4 +63,8 @@ export class UserAge {
   	return jupiterAge.toFixed(2);
   }
 
+  jupiterLifeExp() {
+  	let jupiterLifeExp = this.lifeExp / 11.86;
+  	return jupiterLifeExp.toFixed(2);
+  }
 };

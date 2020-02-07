@@ -63,4 +63,8 @@ describe('UserAge', () => {
   	expect(userAge.marsLifeExp()).toEqual("31.91");
   });
 
+  test('should return calculate Jovian life expectancy', () => {
+  	let userAge = new UserAge(20);
+  	expect(userAge.jupiterLifeExp()).toEqual("31.91");
+  });
 });
