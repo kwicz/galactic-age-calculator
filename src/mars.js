@@ -1,0 +1,18 @@
+import { arrayExpression } from "@babel/types";
+import { getChangedFilesForRoots } from "jest-changed-files";
+
+// Business-Logic
+
+
+class Mars {
+  constructor(age, lifeExp) {
+    this.age = age;
+    this.lifeExp = lifeExp;
+  }
+ 
+  
+
+
+
+};
+
