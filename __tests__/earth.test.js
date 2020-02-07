@@ -24,6 +24,11 @@ describe('Earth', () => {
   	expect(lifeExp.lifeExp).toEqual(60);
   });
 
+  test('should return number of years left of life expectancy', () => {
+  	let lifeExp = new Earth(20, 50);
+  	expect(lifeExp.lifeExp).toEqual(60);
+  });
+
 });
 
     
