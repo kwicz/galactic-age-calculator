@@ -3,25 +3,16 @@ import { getChangedFilesForRoots } from "jest-changed-files";
 
 // Create base values for user
 export class UserAge {
-  constructor(age) {
+  constructor(age, cryoYears) {
     this.age = age;
     this.lifeExp = 80 - age;
+    // this.cryoYears = cryoYears;
+    // this.totalExp = cryoYears + lifeExp;
     this.bonusYears = Math.abs(this.lifeExp);
     this.mercury = [];
     this.venus =[];
     this.mars =[];
     this.jupiter =[];
-  };
-
-  // Ensure integer is given by user
-  checkNumber() {
-  	let number = /\d+/;
-  	let result = number.test(this.age);
-  	if (result === true) {
-  		return "input is a number";
-  	} else {
-  		return "input is not a number";
-  	};
   };
 
   mercurianCalculator() {
@@ -30,7 +21,7 @@ export class UserAge {
 		if (this.mercury[1] < 0) {
   		this.mercury[2] = Math.abs(this.mercury[1]);
   	}
-  	return this.mercury;
+  	return this.mercury;life
   }
 
   venutianCalculator() {

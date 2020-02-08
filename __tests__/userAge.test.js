@@ -8,14 +8,9 @@ describe('UserAge', () => {
     expect(earth.age).toEqual(20);
   });
 
-  test('should determine age input is not an int', () => {
-  	let notNumber = new UserAge("twenty");
-  	expect(notNumber.checkNumber()).toEqual("input is not a number");
-  });
-
-  test('should determine age input is an int', () => {
-  	let number = new UserAge(20);
-  	expect(number.checkNumber()).toEqual("input is a number");
+  test('cryo years should have a value', () => {
+    let earth = new UserAge(20);
+    expect(earth.cryoYears).toEqual(20);
   });
 
   test('should return users bonus years', () => {

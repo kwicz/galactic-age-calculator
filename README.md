@@ -1,7 +1,7 @@
 # _Galactic Age Calculator_
 
-#### _Description 
-Calculate a user's age and life expectancy on each planet.
+#### Description 
+_Calculate a user's age and life expectancy on each planet.
 , Feb 2020_
 
 #### By _**kwicz**_
