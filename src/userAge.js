@@ -48,5 +48,4 @@ export class UserAge {
     }
     return this.jupiter;
   } 
-
 }

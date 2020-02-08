@@ -20,6 +20,7 @@ $(document).ready(function() {
     let userAge = new UserAge (age, cryoYears);
     displayAges(userAge);
     $(".landing").addClass("hidden");
+    $("#header").addClass("hidden");
   });
 
   function displayAges(userAge) {
