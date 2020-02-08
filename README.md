@@ -4,7 +4,7 @@
 _Calculate a user's age and life expectancy on each planet.
 , Feb 2020_
 
-#### By _**kwicz**_
+#### By _**K. Wicz**_
 
 ## Preview
 
@@ -88,4 +88,4 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) 2020 **_Kwicz_**
+Copyright (c) 2020 **_K. Wicz_**
