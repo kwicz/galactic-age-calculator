@@ -6,9 +6,13 @@ _Calculate a user's age and life expectancy on each planet.
 
 #### By _**kwicz**_
 
+## Preview
+
+[![Landing Page Preview](/src/landing-page.png)]
+
 ## Description
 
-_This application allows a user to input their current age and select a planet to see what their age on that planet would be.  Additionally, the program will also tell the user how many years away from their estimated life expectancy they would be on that planet._
+Inspired by the Sci-Fi Trilogy, _Remembrance of Earth's Past_, by Cixin Liu, this site allows users to plan for inter-solar system travel with the fictitious space travel organization, The Halo Group.  A user will enter their age and how many years they plan to be cryogenically frozen to see how many years old they would be and the difference in their age and their estimated life expectancy.
 
 ## Project Specifications
 
@@ -53,6 +57,12 @@ _Download Manually:_
 * Click downloaded file to unzip.
 * Open folder called "galactic-age-calculator".
 * Right click "index.html" and select your preferred browser or text editor.
+
+## Future Additions
+
+* Add planet images.
+* Add planet informational details.
+* Add functionality for Saturn and Uranus.
 
 ## Known Bugs
 
