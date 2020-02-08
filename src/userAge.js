@@ -27,9 +27,9 @@ export class UserAge {
   mercurianCalculator() {
   	this.mercury[0] = (this.age / .24).toFixed(2);
   	this.mercury[1] = (this.lifeExp / .24).toFixed(2);
-  	// if (this.mercury[1] < 0) {
-  	// 	this.mercury[2] = Math.abs(this.lifeExp);
-  	// }
+  	if (this.mercury[1] < 0) {
+  		this.mercury[2] = Math.abs(this.lifeExp);
+  	}
   	return this.mercury;
   }
 

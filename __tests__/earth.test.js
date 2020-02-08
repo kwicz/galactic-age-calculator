@@ -28,6 +28,11 @@ describe('UserAge', () => {
   	expect(userAge.mercurianCalculator()).toEqual(["83.33", "250.00"]);
   });
 
+  test('should return calculations for Mercury with bonus year', () => {
+  	let userAge = new UserAge(90);
+  	expect(userAge.mercurianCalculator()).toEqual(["83.33", "250.00"]);
+  });
+
   test('should return calculations for Venus', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.venutianCalculator()).toEqual(["32.26", "96.77"]);
