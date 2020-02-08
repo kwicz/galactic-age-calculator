@@ -18,7 +18,7 @@ describe('UserAge', () => {
   	expect(number.checkNumber()).toEqual("input is a number");
   });
 
-  test('should return number of years ago a user over 80 should have died', () => {
+  test('should return users bonus years', () => {
   	let stillAlive = new UserAge(90);
   	expect(stillAlive.bonusYears).toEqual(10);
   });
@@ -56,6 +56,11 @@ describe('UserAge', () => {
   test('should return calculations for Jupiter', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.jovianCalculator()).toEqual(["1.69", "5.06"]);
+  });
+
+  test('should return calculations for Jupiter with bonus year', () => {
+  	let userAge = new UserAge(90);
+  	expect(userAge.jovianCalculator()).toEqual(["47.87", "-5.32", "53.19"]);
   });
 
 });

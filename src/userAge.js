@@ -54,6 +54,9 @@ export class UserAge {
   jovianCalculator() {
   	this.jupiter[0] = (this.age / 11.86).toFixed(2);
   	this.jupiter[1] = (this.lifeExp / 11.86).toFixed(2);
+  	if (this.jupiter[1] < 0) {
+  		this.jupiter[2] = Math.abs(this.jupiter[0] - this.jupiter[1]).toFixed(2);
+  	}
   	return this.jupiter;
   } 
 
