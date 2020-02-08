@@ -16,10 +16,10 @@ export class UserAge {
   };
 
   mercurianCalculator() {
-  	const values = Object.values(this);
-  	values.forEach(function(value) {
-  		console.log(value);
-  	});
+  	// const values = Object.values(this);
+  	// values.forEach(function(value) {
+  	// 	console.log(value);
+  	// });
   	this.mercury[0] = (this.age / .24).toFixed(2);
   	this.mercury[1] = (this.totalExp / .24).toFixed(2);
 		if (this.mercury[1] < 0) {
