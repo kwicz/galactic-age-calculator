@@ -38,9 +38,9 @@ describe('UserAge', () => {
   	expect(userAge.venutianCalculator()).toEqual(["32.26", "96.77"]);
   });
 
-  test('should return calculations for Mercury with bonus year', () => {
+  test('should return calculations for Venus with bonus year', () => {
   	let userAge = new UserAge(90);
-  	expect(userAge.venutianCalculator()).toEqual(["375.00", "-41.67", "416.67"]);
+  	expect(userAge.venutianCalculator()).toEqual(["145.16", "-16.13", "161.29"]);
   });
 
   test('should return calculations for Mars', () => {
