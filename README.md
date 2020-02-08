@@ -8,7 +8,7 @@ _Calculate a user's age and life expectancy on each planet.
 
 ## Preview
 
-![Landing Page Preview](/src/landing-page.png)
+![Landing Page Preview](landing-page.png)
 
 ## Description
 
