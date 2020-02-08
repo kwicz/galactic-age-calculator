@@ -8,31 +8,28 @@ Calculate a user's age and life expectancy on each planet.
 
 ## Description
 
-_This application allows a user to input their current age and select a planet to see what their age on that planet would be.  Additionally, a user may also answer questions regarding their lifestyle to calculate their life expectancy on Earth and then select a planet to see what their estimated life expectancy would be on that respective planet._
+_This application allows a user to input their current age and select a planet to see what their age on that planet would be.  Additionally, the program will also tell the user how many years away from their estimated life expectancy they would be on that planet._
 
 ## Project Specifications
 
 |Behavior|Input|Output|
 |---|:---:|:---:|
-|User inputs earth age|--|error|
-||24|24|
-|User selects planet|--|error|
-||Earth|Earth age|
-||Mercury|Earth age / .24|
-||Venus|Earth age / .62|
-||Mars|Earth age / 1.88|
-||Jupiter|Earth age / 11.86|
-|User answers lifestyle questions|lifestyle data|Estimated years of life left|
-||data + Mercury|remaining Earth years / .24| 
-||data + Venus|rremaining Earth years / .62|
-||data + Mars|remaining Earth years / 1.88|
-||data + Jupiter|remaining Earth years / 11.86|
-|Lifestyle questions indicate the user is past estimated life expectancy|lifestyle data|# of years past estimated end of life|
-||data + Mercury|Earth years / .24|
-||data + Venus|Earth years / .62|
-||data + Mars|Earth years / 1.88|
-||data + Jupiter|Earth years / 11.86|
-
+|User inputs age|--|error|
+||"twenty"|error|
+|User inputs age under 80|20|60 (years until estimated life expectancy)
+|User inputs age over 80|90|10 (years past estimated life expectancy)|
+|User selects planet|Mercury|Earth age / .24|
+||20|Estimated years left / .24|
+||90|Estimated years over / .24|
+|User selects planet|Venus|Earth age / .62|
+||20|Estimated years left / .62|
+||90|Estimated years over / .62|
+|User selects planet|Mars|Earth age / 1.88|
+||20|Estimated years left / 1.88|
+||90|Estimated years over / 1.88|
+|User selects planet|Jupiter|Earth age / 11.86|
+||20|Estimated years left / 11.86|
+||90|Estimated years over / 11.86|
 
 ## Setup/Installation Requirements
 
@@ -66,7 +63,6 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 ## Technologies Used
 
 * Javascript
-* jQuery
 * Webpack
 * Node.js
 * Jest
