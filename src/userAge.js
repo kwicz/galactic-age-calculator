@@ -36,6 +36,9 @@ export class UserAge {
   venutianCalculator() {
   	this.venus[0] = (this.age / .62).toFixed(2);
   	this.venus[1] = (this.lifeExp / .62).toFixed(2);
+  	if (this.venus[1] < 0) {
+  		this.venus[2] = Math.abs(this.venus[0] - this.venus[1]).toFixed(2);
+  	}
   	return this.venus;
   }
 
