@@ -4,18 +4,18 @@ import { exportAllDeclaration, tsImportEqualsDeclaration } from '@babel/types';
 describe('UserAge', () => {
 
   test('age should have a value', () => {
-    let earth = new UserAge(20);
-    expect(earth.age).toEqual(20);
+    let userAge = new UserAge(20);
+    expect(userAge.age).toEqual(20);
   });
 
   test('cryo years should have a value', () => {
-    let earth = new UserAge(20);
-    expect(earth.cryoYears).toEqual(20);
+    let userAge = new UserAge(20, 20);
+    expect(userAge.cryoYears).toEqual(20);
   });
 
   test('should return users bonus years', () => {
-  	let stillAlive = new UserAge(90);
-  	expect(stillAlive.bonusYears).toEqual(10);
+  	let userAge = new UserAge(90);
+  	expect(userAge.bonusYears).toEqual(10);
   });
 
   test('should return calculations for Mercury', () => {

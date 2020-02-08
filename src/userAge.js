@@ -6,7 +6,7 @@ export class UserAge {
   constructor(age, cryoYears) {
     this.age = age;
     this.lifeExp = 80 - age;
-    // this.cryoYears = cryoYears;
+    this.cryoYears = cryoYears;
     // this.totalExp = cryoYears + lifeExp;
     this.bonusYears = Math.abs(this.lifeExp);
     this.mercury = [];
