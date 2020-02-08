@@ -50,7 +50,7 @@ describe('UserAge', () => {
 
   test('should return calculations for Mars with bonus year', () => {
   	let userAge = new UserAge(90);
-  	expect(userAge.martianCalculator()).toEqual(["145.16", "-16.13", "161.29"]);
+  	expect(userAge.martianCalculator()).toEqual(["47.87", "-5.32", "53.19"]);
   });
 
   test('should return calculations for Jupiter', () => {
