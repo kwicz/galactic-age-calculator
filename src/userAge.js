@@ -7,7 +7,7 @@ export class UserAge {
     this.age = age;
     this.lifeExp = 80 - age;
     this.cryoYears = cryoYears;
-    // this.totalExp = cryoYears + lifeExp;
+    this.totalExp = this.cryoYears + this.lifeExp;
     this.bonusYears = Math.abs(this.lifeExp);
     this.mercury = [];
     this.venus =[];

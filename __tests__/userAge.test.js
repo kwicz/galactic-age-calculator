@@ -13,6 +13,11 @@ describe('UserAge', () => {
     expect(userAge.cryoYears).toEqual(20);
   });
 
+  test('should return calculated total life expectancy', () => {
+    let userAge = new UserAge(20, 20);
+    expect(userAge.totalExp).toEqual(80);
+  });
+
   test('should return users bonus years', () => {
   	let userAge = new UserAge(90);
   	expect(userAge.bonusYears).toEqual(10);
