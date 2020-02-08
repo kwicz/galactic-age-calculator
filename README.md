@@ -2,7 +2,7 @@
 
 #### Description 
 _Calculate a user's age and life expectancy on each planet.
-, Feb 2020_
+ Feb 2020._
 
 #### By _**K. Wicz**_
 
@@ -12,7 +12,7 @@ _Calculate a user's age and life expectancy on each planet.
 
 ## Description
 
-Inspired by the Sci-Fi Trilogy, _Remembrance of Earth's Past_, by Cixin Liu, this site allows users to plan for inter-solar system travel with the fictitious space travel organization, The Halo Group.  A user will enter their age and how many years they plan to be cryogenically frozen to see how many years old they would be and the difference in their age and their estimated life expectancy.
+Inspired by the Sci-Fi Trilogy _Remembrance of Earth's Past_ by Cixin Liu, this site allows users to plan for inter-solar system travel with the fictitious space travel organization, The Halo Group.  This Halo Group website will allow their customers to enter their age and how many years they plan to be cryogenically frozen to see how many years old they would be and the difference in their age and their estimated life expectancy on different planets that are part of a travel package.
 
 ## Project Specifications
 

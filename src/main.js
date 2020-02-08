@@ -30,28 +30,28 @@ $(document).ready(function() {
     if (mercury[2]) {
       $("#mercury-results").append('<li>Bonus Mercurian years lived: ' + mercury[2] + '</li>');
     } else {
-      $("#mercury-results").append('<li>Life expectancy on Mercury: ' + mercury[1] + '</li>');
+      $("#mercury-results").append('<li>Life expectancy: ' + mercury[1] + '</li>');
     }
     const venus = userAge.venutianCalculator();
     $("#venus-results").append('<li>Your age on Venus: ' + venus[0] + '</li>');
     if (venus[2]) {
       $("#venus-results").append('<li>Bonus Venutiun years lived: ' + venus[2] + '</li>');
     } else {
-      $("#venus-results").append('<li>Life expectancy on Venus: ' + venus[1] + '</li>');
+      $("#venus-results").append('<li>Life expectancy: ' + venus[1] + '</li>');
     }
     const mars = userAge.martianCalculator();
     $("#mars-results").append('<li>Your age on Mars: ' + mars[0] + '</li>');
     if (mars[2]) {
       $("#mars-results").append('<li>Bonus Martian years lived: ' + mars[2] + '</li>');
     } else {
-      $("#mars-results").append('<li>Life expectancy on Mars: ' + mars[1] + '</li>');
+      $("#mars-results").append('<li>Life expectancy: ' + mars[1] + '</li>');
     }
     const jupiter = userAge.jovianCalculator();
     $("#jupiter-results").append('<li>Your age on Jupiter: ' + jupiter[0] + '</li>');
     if (jupiter[2]) {
       $("#jupiter-results").append('<li>Bonus Jovian years lived: ' + jupiter[2] + '</li>');
     } else {
-      $("#jupiter-results").append('<li>Life expectancy on Jupiter: ' + jupiter[1] + '</li>');
+      $("#jupiter-results").append('<li>Life expectancy: ' + jupiter[1] + '</li>');
     }
   }
 

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
-    // "lint": "eslint src/*.js",
+    "lint": "eslint src/*.js",
     "test": "jest",
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
@@ -32,5 +32,9 @@
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwicz/galactic-age-calculator.git"
   }
 }
