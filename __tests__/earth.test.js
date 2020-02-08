@@ -48,6 +48,11 @@ describe('UserAge', () => {
   	expect(userAge.martianCalculator()).toEqual(["10.64", "31.91"]);
   });
 
+  test('should return calculations for Mars with bonus year', () => {
+  	let userAge = new UserAge(90);
+  	expect(userAge.martianCalculator()).toEqual(["145.16", "-16.13", "161.29"]);
+  });
+
   test('should return calculations for Jupiter', () => {
   	let userAge = new UserAge(20);
   	expect(userAge.jovianCalculator()).toEqual(["1.69", "5.06"]);

@@ -45,6 +45,9 @@ export class UserAge {
   martianCalculator() {
   	this.mars[0] = (this.age / 1.88).toFixed(2);
   	this.mars[1] = (this.lifeExp / 1.88).toFixed(2);
+  	if (this.mars[1] < 0) {
+  		this.mars[2] = Math.abs(this.mars[0] - this.mars[1]).toFixed(2);
+  	}
   	return this.mars;
   } 
 
