@@ -30,7 +30,7 @@ describe('UserAge', () => {
 
   test('should return calculations for Mercury with bonus year', () => {
   	let userAge = new UserAge(90);
-  	expect(userAge.mercurianCalculator()).toEqual(["375.00", "-41.67", "416.67"]);
+  	expect(userAge.mercurianCalculator()).toEqual(["375.00", "-41.67", 41.67]);
   });
 
   test('should return calculations for Venus', () => {
@@ -40,7 +40,7 @@ describe('UserAge', () => {
 
   test('should return calculations for Venus with bonus year', () => {
   	let userAge = new UserAge(90);
-  	expect(userAge.venutianCalculator()).toEqual(["145.16", "-16.13", "161.29"]);
+  	expect(userAge.venutianCalculator()).toEqual(["145.16", "-16.13", 16.13]);
   });
 
   test('should return calculations for Mars', () => {
@@ -50,7 +50,7 @@ describe('UserAge', () => {
 
   test('should return calculations for Mars with bonus year', () => {
   	let userAge = new UserAge(90);
-  	expect(userAge.martianCalculator()).toEqual(["47.87", "-5.32", "53.19"]);
+  	expect(userAge.martianCalculator()).toEqual(["47.87", "-5.32", 5.32]);
   });
 
   test('should return calculations for Jupiter', () => {
@@ -60,7 +60,7 @@ describe('UserAge', () => {
 
   test('should return calculations for Jupiter with bonus year', () => {
   	let userAge = new UserAge(90);
-  	expect(userAge.jovianCalculator()).toEqual(["7.59", "-0.84", "8.43"]);
+  	expect(userAge.jovianCalculator()).toEqual(["7.59", "-0.84", .84]);
   });
 
 });
