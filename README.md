@@ -8,7 +8,7 @@ _Calculate a user's age and life expectancy on each planet.
 
 ## Preview
 
-[![Landing Page Preview](/src/landing-page.png)]
+![Landing Page Preview](/src/landing-page.png)
 
 ## Description
 
@@ -82,7 +82,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * HTML & CSS
 * Bootstrap 4
 * [Bootsnipp](https://bootsnipp.com/snippets/351Vo)
-* [Start Bootstrap](https://startbootstrap.com/snippets/registration-page/)
+* [Start Bootstrap](https://startbootstrap.com/snippets/pricing-table/)
 
 ### License
 
