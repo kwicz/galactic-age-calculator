@@ -8,20 +8,21 @@ $(document).ready(function() {
 
 	$("form").submit(function(event) {
 		event.preventDefault();
-		const userAge = $("#age").val()
-		checkNumber(userAge);
-		if (checkNumber === false) {
-			alert("Please tell us your age.");
+		const age = $("#age").val()
+		let cryoYears = $("#cryoYears").val();
+		if (userAge >= 80) {
+			if (cryoYears > 0){
+				alert("We apologize, but cryogenic freezing is currently only available for Earthlings under 80.")
+			}
+			cryoYears = 0;
 		}
-		const cryoYears = $("#cryoYears").val();
-		checkNumber(cryoYears);
-		if (checkNumber === false) {
-			alert("Please tell us the number of years you plan to be frozen.");
-		}
+		let userAge = new UserAge (userAge, cryoYears)
 		const mercury = userAge.mercurianCalculator();
 		const venus = userAge.venutianCalculator();
 		const mars = userAge.martianCalculator();
 		const jupiter = userAge.jovianCalculator();
+
+
 	});
 
 

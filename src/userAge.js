@@ -16,8 +16,12 @@ export class UserAge {
   };
 
   mercurianCalculator() {
+  	const values = Object.values(this);
+  	values.forEach(function(value) {
+  		console.log(value);
+  	});
   	this.mercury[0] = (this.age / .24).toFixed(2);
-  	this.mercury[1] = (this.lifeExp / .24).toFixed(2);
+  	this.mercury[1] = (this.totalExp / .24).toFixed(2);
 		if (this.mercury[1] < 0) {
   		this.mercury[2] = Math.abs(this.mercury[1]);
   	}
@@ -26,7 +30,7 @@ export class UserAge {
 
   venutianCalculator() {
   	this.venus[0] = (this.age / .62).toFixed(2);
-  	this.venus[1] = (this.lifeExp / .62).toFixed(2);
+  	this.venus[1] = (this.totalExp / .62).toFixed(2);
   	if (this.venus[1] < 0) {
   		this.venus[2] = Math.abs(this.venus[1]);
   	}
@@ -35,7 +39,7 @@ export class UserAge {
 
   martianCalculator() {
   	this.mars[0] = (this.age / 1.88).toFixed(2);
-  	this.mars[1] = (this.lifeExp / 1.88).toFixed(2);
+  	this.mars[1] = (this.totalExp / 1.88).toFixed(2);
   	if (this.mars[1] < 0) {
   		this.mars[2] = Math.abs(this.mars[1]);
   	}
@@ -44,7 +48,7 @@ export class UserAge {
 
   jovianCalculator() {
   	this.jupiter[0] = (this.age / 11.86).toFixed(2);
-  	this.jupiter[1] = (this.lifeExp / 11.86).toFixed(2);
+  	this.jupiter[1] = (this.totalExp / 11.86).toFixed(2);
   	if (this.jupiter[1] < 0) {
   		this.jupiter[2] = Math.abs(this.jupiter[1]);
   	}
