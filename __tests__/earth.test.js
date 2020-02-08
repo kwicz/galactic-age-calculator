@@ -60,7 +60,7 @@ describe('UserAge', () => {
 
   test('should return calculations for Jupiter with bonus year', () => {
   	let userAge = new UserAge(90);
-  	expect(userAge.jovianCalculator()).toEqual(["47.87", "-5.32", "53.19"]);
+  	expect(userAge.jovianCalculator()).toEqual(["7.59", "-0.84", "8.43"]);
   });
 
 });
