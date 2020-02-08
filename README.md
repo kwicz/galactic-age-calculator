@@ -18,17 +18,19 @@ _This application allows a user to input their current age and select a planet t
 ||"twenty"|error|
 |User inputs age under 80|20|60 (years until estimated life expectancy)
 |User inputs age over 80|90|10 (years past estimated life expectancy)|
+|User inputs preferred cryogenically frozen years|20|est. life expectancy + 20|
+|User over 80 inputs preferred cryogenically frozen years|20|error|
 |User selects planet|Mercury|Earth age / .24|
-||20|Estimated years left / .24|
+||20|Estimated total years left / .24|
 ||90|Estimated years over / .24|
 |User selects planet|Venus|Earth age / .62|
-||20|Estimated years left / .62|
+||20|Estimated total years left / .62|
 ||90|Estimated years over / .62|
 |User selects planet|Mars|Earth age / 1.88|
-||20|Estimated years left / 1.88|
+||20|Estimated total years left / 1.88|
 ||90|Estimated years over / 1.88|
 |User selects planet|Jupiter|Earth age / 11.86|
-||20|Estimated years left / 11.86|
+||20|Estimated total years left / 11.86|
 ||90|Estimated years over / 11.86|
 
 ## Setup/Installation Requirements
@@ -62,10 +64,15 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 
 ## Technologies Used
 
-* Javascript
-* Webpack
 * Node.js
+* Webpack
+* Javascript
+* jQuery
 * Jest
+* HTML & CSS
+* Bootstrap 4
+* [Bootsnipp](https://bootsnipp.com/snippets/351Vo)
+* [Start Bootstrap](https://startbootstrap.com/snippets/registration-page/)
 
 ### License
 

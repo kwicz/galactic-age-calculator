@@ -1,43 +1,150 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Galactic Age Calculator</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Galactic Age Calculator</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container-fluid login-block">
+    <div class="container">
+      <div class="row starting-form">
+        <div class="col-md-4 login-sec">
+          <h2 class="text-center">Help Us Tailor Your Experience</h2>
+          <form class="form-signin">
+            <div class="form-label-group">
+              <input type="number" id="age" class="form-control" placeholder="Current Age" required autofocus>
+              <label for="Age">Current Age</label>
+            </div>
+            <div class="form-label-group">
+              <input type="number" id="cryoYears" class="form-control" placeholder="Cryogenic Years" required autofocus>
+              <label for="cryoYears">Cryogenic Years</label>
+            </div>
+            <div class="form-label-group">
+              <input type="email" id="email" class="form-control" placeholder="Email address" required>
+              <label for="email">Email Address</label>
+            </div>
+            <button type="submit" class="btn btn-secondary float-right">See Packages</button>
+          </form>
+          <div class="copy-text">Created with <i class="fa fa-heart"></i> by The Halo Group</div>
+        </div>
+        <div class="col-md-8 banner-sec">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+           <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
 
-		<style type="text/css"></style>
-	</head>
-	<body>
-		  <div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
-          <div class="card-body">
-            <h5 class="card-title text-center">Hello Traveler</h5>
-            <form class="form-signin">
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <label for="inputEmail">Email address</label>
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="https://silversea-h.assetsadobe2.com/is/image/content/dam/silversea-com/ships/silver-moon/silversea-luxury-cruises-silver-moon-1200x800.jpg?wid=530&fmt=pjpeg&pscan=5&qlt=80&fit=hfit" alt="Space Cruiser">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="banner-text">
+                  <h2>Luxury Space Cruisers</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>  
               </div>
-
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
+            </div>
+            
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="https://silversea-h.assetsadobe2.com/is/image/content/dam/silversea-com/ships/silver-moon/silversea-luxury-cruises-silver-moon-1200x800.jpg?wid=530&fmt=pjpeg&pscan=5&qlt=80&fit=hfit" alt="Space Cruiser">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="banner-text">
+                  <h2>Luxury Space Cruisers</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>  
               </div>
+            </div>
 
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-              <hr class="my-4">
-              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit">
-            </form>
-          </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="https://silversea-h.assetsadobe2.com/is/image/content/dam/silversea-com/ships/silver-moon/silversea-luxury-cruises-silver-moon-1200x800.jpg?wid=530&fmt=pjpeg&pscan=5&qlt=80&fit=hfit" alt="Space Cruiser">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="banner-text">
+                  <h2>Luxury Space Cruisers</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>  
+              </div>
+            </div>
+          </div>     
         </div>
       </div>
     </div>
   </div>
 
+<div class="container-fluid pricing py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+            <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+            <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Tier -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+            <h6 class="card-price text-center">$49<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited Users</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
 
-	</body>
+</body>
 </html>
